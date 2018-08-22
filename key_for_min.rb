@@ -6,9 +6,9 @@ def key_for_min_value(name_hash)
     if value[0] < value[1] && value[0] < value[2]
       key[0]
     elsif value[1] < value[0] && value[1] < value[2]
-      key[i + 1]
-    else value[i + 2] < value[i] && value[i + 2] < value[i + 1]
-      key[i + 2]
+      key[1]
+    else value[2] < value[0] && value[2] < value[1]
+      key[2]
     end
   end 
 end
